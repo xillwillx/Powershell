@@ -1,4 +1,6 @@
-
+# Based on FuzzySecurity's code https://github.com/FuzzySecurity/PSKernel-Primitives/tree/master/Sample-Exploits/MS16-135
+# Automates checking & exploiting vulnerable targets by checking: Windows version, architecture, and if its patched.
+# Then downloads and runs Fuzzy Security's MS16-135.ps1 in memory to elevate nt authority\system 
 # Windows 7 SP1 / Windows Server 2008 R2 SP1 - KB3197867 
 # Windows 8.1 / Windows Server 2012 R2 - KB3197873
 # Windows Server 2012 - KB3197876 
