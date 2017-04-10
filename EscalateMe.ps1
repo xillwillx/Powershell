@@ -15,8 +15,8 @@ function Exploit-All {
         #MS15-051
         #MS15-078
         #MS16-016
-        MS16-032
         MS16-135
+        MS16-032
 }
 
 
