@@ -1,5 +1,5 @@
 <#
-    File: EscalateMe.ps1
+    File: MS16-032_AutoPwn.ps1
     Author: @xillwillx
     License: GNU General Public License v3.0
 #> 
